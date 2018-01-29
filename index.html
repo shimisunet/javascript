@@ -9,7 +9,7 @@
       window.confirm('いいんですかね？');
     }
     function allOpen(){
-      document.getElementById('answer1').className = 'open';
+      document.getElementsByTagName('dd').item(0).className = 'open';
     }
 
     </script>
@@ -20,7 +20,7 @@
     <h1>javascript の練習</h1>
     <dl>
       <dt>このページは何</dt>
-      <dd class="close" id="answer1">
+      <dd class="close">
         <p>javascript の練習用のページです。</p>
       </dd>
     </dl>
