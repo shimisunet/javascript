@@ -11,12 +11,15 @@
     function allOpen(){
       document.getElementsByTagName('dd').item(0).className = 'open';
     }
-
+    function allClose(){
+      document.getElementsByTagName('dd').item(0).className = 'close';
+    }
     </script>
   </head>
   <body>
     <button type="button" name="button" onclick="windowOpen();">ここをクリック！</button>
     <button type="button" name="button" onclick="allOpen();">ひらく</button>
+    <button type="button" name="button" onclick="allClose();">とじる</button>
     <h1>javascript の練習</h1>
     <dl>
       <dt>このページは何</dt>
