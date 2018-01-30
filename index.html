@@ -14,6 +14,9 @@
     function allClose(){
       document.getElementsByTagName('dd').item(0).className = 'close';
     }
+    function toggleAnswer(){
+      document.getElementsByTagName('dd').item(0).className = 'open';
+    }
     </script>
   </head>
   <body>
@@ -22,9 +25,17 @@
     <button type="button" name="button" onclick="allClose();">とじる</button>
     <h1>javascript の練習</h1>
     <dl>
-      <dt>このページは何</dt>
+      <dt onclick="toggleAnswer();">このページは何？</dt>
       <dd class="close">
         <p>javascript の練習用のページです。</p>
+      </dd>
+      <dt>このページでできること</dt>
+      <dd class="close">
+        <p>ボタンを押すとメッセージを出したり消したりできる。</p>
+      </dd>
+      <dt>終わりに</dt>
+      <dd class="close">
+        <p>ほげほげ</p>
       </dd>
     </dl>
   </body>
