@@ -9,10 +9,14 @@
       window.confirm('いいんですかね？');
     }
     function allOpen(){
-      document.getElementsByTagName('dd').item(0).className = 'open';
+      for (let i = 0; i < 3; i++) {
+        document.getElementsByTagName('dd').item(i).className = 'open';
+      }
     }
     function allClose(){
-      document.getElementsByTagName('dd').item(0).className = 'close';
+      for (let i = 0; i < 3; i++) {
+        document.getElementsByTagName('dd').item(i).className = 'close';
+      }
     }
     function toggleAnswer(){
       if (document.getElementsByTagName('dd').item(0).className === 'open') {
@@ -21,6 +25,7 @@
         document.getElementsByTagName('dd').item(0).className = 'open';
       }
     }
+
     </script>
   </head>
   <body>
