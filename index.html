@@ -5,16 +5,19 @@
     <title>よくある質問</title>
     <link rel="stylesheet" href="css/master.css">
     <script>
+
+    const answers = document.getElementsByTagName('dd');
+
     function windowOpen(){
       window.confirm('いいんですかね？');
     }
     function allOpen(){
-      for (let i = 0; i < document.getElementsByTagName('dd').length; i++) {
+      for (let i = 0; i < answers.length; i++) {
         document.getElementsByTagName('dd').item(i).className = 'open';
       }
     }
     function allClose(){
-      for (let i = 0; i < document.getElementsByTagName('dd').length; i++) {
+      for (let i = 0; i < answers.length; i++) {
         document.getElementsByTagName('dd').item(i).className = 'close';
       }
     }
